@@ -43,6 +43,7 @@ export default function Frontdisplay() {
         auto()
       }
       return ()=> clearInterval(slideinterval)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[currentSlide])
 
 

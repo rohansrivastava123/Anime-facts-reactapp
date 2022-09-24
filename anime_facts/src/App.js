@@ -9,13 +9,14 @@ import Cardshow from './Components/Cardshow';
 function App() {
   return (
     <div className="App">
-    
+     
       <Router>
+      <Navbar />
         <Routes>
-          <Route exact path='/' element ={<Frontdisplay />}/>
-          <Route exact path='/Home' element={<Cardshow />}/>
-          <Route exact path='/anime_specific_facts/:anime_name/:fact_id' element={<Animespecificfact />}/>
-          <Route exact path='/anime_facts/:anime_name' element = {<Animecardfacts/>} />
+          <Route exact path="/" element ={<Frontdisplay />}/>
+          <Route exact path="/Home" element={<Cardshow />}/>
+          <Route exact path="/anime_specific_facts/:anime_name/:fact_id" element={<Animespecificfact />}/>
+          <Route exact path="/anime_facts/:anime_name" element = {<Animecardfacts/>} />
         </Routes>
       </Router>
     </div>
