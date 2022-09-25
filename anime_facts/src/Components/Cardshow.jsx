@@ -24,7 +24,7 @@ function Cardshow() {
       {anime ? (
         <>
         <div className="main">
-          <p className="head-card"> The<strong >Anime</strong>Database</p>
+          <p className="head-card mainshow"> The<strong >Anime</strong>Database</p>
           <div className="maincarddiv">
             {info.map((inf, key) => {
               return <Animecard key={inf.anime_id} inf={inf} />

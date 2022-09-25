@@ -180,13 +180,13 @@ hr {
 }
 .head-card {
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 3%;
   font-size: 2rem;
-  color: #777;
+  color: rgb(100, 100, 100);
 
   strong {
-    color: rgb(62, 61, 61);
+    color: rgb(175, 174, 174);
   }
 }
 .main {
@@ -209,6 +209,10 @@ hr {
   }
   margin-bottom: 3rem;
 }
-.facts {
+.facts,.mainshow {
   left: 6%;
+  background-color: rgb(0, 0, 0);
+  width:90vw;
+  padding:10px;
+  border-radius: 8px;
 }
