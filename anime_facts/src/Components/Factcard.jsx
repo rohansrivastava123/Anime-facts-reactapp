@@ -5,8 +5,10 @@ function Factcard(props) {
   console.log(info)
   const { fact, fact_id } = inf
   return (
-    <div>
-      <h1>{fact_id}</h1>
+    <div className="factcard">
+      <h1>Fact :{fact_id}</h1>
+      <hr />
+      <br />
       <h4>{fact}</h4>
     </div>
   )
