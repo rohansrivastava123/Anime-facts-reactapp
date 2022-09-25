@@ -14,7 +14,7 @@ function App() {
       <Navbar />
         <Routes>
           <Route exact path="/" element ={<Frontdisplay />}/>
-          <Route exact path="/Home" element={<Cardshow />}/>
+          <Route exact path="/Home" element={<Cardshow  />}/>
           <Route exact path="/anime_specific_facts/:anime_name/:fact_id" element={<Animespecificfact />}/>
           <Route exact path="/anime_facts/:anime_name" element = {<Animecardfacts/>} />
         </Routes>
