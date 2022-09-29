@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import Factcard from "./Factcard"
 import { useParams } from "react-router-dom"
+import Errorpage from "./Errorpage"
 export default function Animecardfacts() {
   const { anime_name } = useParams()
   const [info, setinfo] = useState()
@@ -33,7 +34,7 @@ export default function Animecardfacts() {
           </div>
         </>
       ) : (
-        console.log(false)
+        <Errorpage />
       )}
     </div>
   )

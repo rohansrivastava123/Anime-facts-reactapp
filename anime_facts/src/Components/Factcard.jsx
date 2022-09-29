@@ -3,7 +3,7 @@ import React from "react"
 function Factcard(props) {
   const { inf, info } = props
   console.log(info)
-  const { fact, fact_id ,img} = inf
+  const { fact, fact_id} = inf
   return (
     <>
     

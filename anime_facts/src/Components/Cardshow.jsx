@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import cardbg from "../images/cardbg.jpg"
 import Animecard from "./Animecard"
+import Errorpage from "./Errorpage"
 function Cardshow() {
   const [anime, setAnimes] = useState()
   const [info, setinfo] = useState()
@@ -13,6 +14,8 @@ function Cardshow() {
         const respdata = res.data
         setAnimes(respdata)
         setinfo(respdata.data)
+      }).catch((err)=>{
+        console.log("error loading the data "+ err)
       })
   }, [])
 
@@ -32,8 +35,7 @@ function Cardshow() {
           </div>
         </div>
         </>
-      ) : (
-        console.log(false)
+      ) : (<Errorpage />
       )}
       
     </div>
